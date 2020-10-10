@@ -1,4 +1,5 @@
 html{
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 .slider h3, 
@@ -17,8 +18,7 @@ html{
 
 
 .clients img {
-  max-width: 150px;
- 
+  max-width: 150px; 
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
 }
 
@@ -45,10 +45,32 @@ footer{
   padding: 5px 0;
   
 }
-footer h3 { 
-  font-size: 30px;
-}
 #project img { 
   margin-bottom: 5px;
+  transition:all 0.50s ease-in-out;
+}
+#project img:hover{
+  -webkit-transform: scale(1.08);
+  transition: all 1s ease;
+  transform: scale(1.08); -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
+#cards .card{
+  text-align: center;
+  display: block;
+  top: -150px;
+  z-index: 9999999;
+  filter: opacity(0.6);
+  transition: all 0.5s ease-in;
+}
+
+#cards .card:hover{
+  filter: opacity(1);
+}
+#carousel-skil img { 
+  display: block;
+  width: 200px;
+  height: 212px;
+  
+}
